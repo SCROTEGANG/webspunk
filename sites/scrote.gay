@@ -1,0 +1,7 @@
+www.scrote.gay, scrote.gay {
+    reverse_proxy scrote.gay.web:9999
+}
+
+radiohomo.scrote.gay {
+    reverse_proxy scrote.gay.radiohomo:9998
+}
