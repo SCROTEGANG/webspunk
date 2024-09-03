@@ -5,3 +5,7 @@ www.scrote.gay, scrote.gay {
 radiohomo.scrote.gay {
 	reverse_proxy scrote.gay.radiohomo:9998
 }
+
+portainer.scrote.gay {
+	reverse_proxy scrote.gay.portainer:9996
+}
