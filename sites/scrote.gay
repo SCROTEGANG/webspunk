@@ -2,6 +2,20 @@ www.scrote.gay, scrote.gay {
 	reverse_proxy scrote.gay.site:9999
 }
 
+info.scrote.gay {
+	root /srv/info.scrote.gay
+	try_files {path}.html {path}
+	templates
+	encode gzip zstd
+	file_server {
+		index index.html
+	}
+
+	handle /docs/* {
+		rewrite /document.html
+	}
+}
+
 radiohomo.scrote.gay {
 	reverse_proxy scrote.gay.radiohomo:9998
 }
